@@ -14,7 +14,7 @@ else:
     print("✅ MT5 Connected Successfully!")
 
 # ---------------- CHECK SYMBOL ----------------
-if  mt5.symbol_select(SYMBOL, True):
+if not  mt5.symbol_select(SYMBOL, True):
     print(f"❌ Failed to select symbol {SYMBOL}")
     mt5.shutdown()
     quit()
